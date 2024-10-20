@@ -1,0 +1,92 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: cadetblue;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.update{
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+}
+
+.update1{
+    display:inline;
+    /* border: 1px solid red; */
+}
+
+span{
+    background-color: yellow;
+}
+
+#warning {
+    background-color: lightcoral;
+    color: aliceblue;
+    margin: auto;
+    width: 40%;
+    height: 30%;
+    text-align: center;
+}
+
+#success {
+    background-color: darkgreen;
+    color: rgb(231, 200, 158);
+    margin: auto;
+    width: 40%;
+    height: 30%;
+    text-align: center;
+}
+
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2017/01/24/03/53/plant-2004483__480.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+textarea {
+    max-width: 100%;
+}
+
+h2 {
+    background-color: #129791;
+    color: #ffffff; /* İstediğin rengi buraya gir */
+}
+
+h3 {
+    background-color: #129791;
+    color: #ffffff; /* İstediğin rengi buraya gir */
+}
+
+.custom-border-radius {
+    border-radius: 10px; /* İstediğiniz değer */
+    /*background-color: rgba(0, 0, 0, 0.5); /* Arka plan rengi eklemek isteyebilirsiniz */
+    padding: 10px; /* İç boşluk */
+}
+
+.help-text, .form-text {
+    color: #aaaaaa;           /* Metni beyaz yapalım */
+    font-size: 1rem;       /* Yazı boyutunu artırıyoruz */
+    font-weight: bold;     /* Yazı kalın olsun */
+    /*background-color: rgba(66, 77, 88, 0.75); /*Arka plana hafif siyah transparan ekleyelim*/
+    padding: 5px;
+    border-radius: 4px;
+}
+
+
+.asteriskField {
+    background-color: inherit;
+}
+
+.form-label {
+    color: rgb(127, 247, 247); /* Label rengi */
+    font-weight: bold; /* Kalın yazı */
+}

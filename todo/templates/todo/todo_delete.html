@@ -1,0 +1,33 @@
+{% extends 'todo/base.html' %}
+
+{% block content %}
+    
+<!-- <div class="delete">
+  <div class="delete1">
+    <h2>Todo Delete</h2>
+    <form action="" method="POST">
+      {% csrf_token %}
+      Are you sure to delete <span>{{todo}}</span> ?
+      <input type="submit" value="Delete">
+    </form>
+  </div>
+</div> -->
+
+<div class="container pt-4">
+  <div class="col-lg-6 mx-auto p-0 shadow">
+    <div class="alert alert-warning text-center">
+      <h2>Delete Todo</h2>
+    </div>
+    <div class="p-4 d-flex align-items-center">
+      <form action="" method="post">
+        {% csrf_token %}
+        Are you sure delete <span>{{ todo }}</span> ?
+        <input type="submit" value="Delete" class="btn btn-danger" />
+        <a href="{% url 'home' %}"><input type="button" value="CANCEL" class="btn btn-primary"></a>
+      </form>
+    </div>  
+  </div>
+</div>
+
+{% endblock content %}
+    

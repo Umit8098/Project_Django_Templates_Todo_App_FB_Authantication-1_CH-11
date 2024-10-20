@@ -1,0 +1,29 @@
+{% extends 'todo/base.html' %}
+
+{% block content %}
+
+<!-- <form action="" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Add">
+</form> -->
+
+<div class="container pt-4">
+    <div class="col-lg-6 mx-auto p-0 shadow">
+      <div class="alert alert-warning text-center">
+        <h2>Add Todo</h2>
+      </div>
+  
+      <div class="p-4 d-flex align-items-center">
+        <form action="" method="post">
+          {% csrf_token %} {{ form.as_p }}
+          <input type="submit" value="Add" class="btn btn-success" />
+          <a href="{% url 'home' %}"
+            ><input type="button" value="CANCEL" class="btn btn-primary"
+          /></a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}

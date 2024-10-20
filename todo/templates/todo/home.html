@@ -1,0 +1,127 @@
+{% extends "todo/base.html" %}
+
+{% block title %} Home {% endblock title %}
+
+{% block content %}
+
+<div class="container pt-4">
+  <div class="row mt-2 p-0">
+
+    <div class="col-lg-4 mx-auto p-0 shadow">
+      <div class="alert alert-warning text-center">
+        <h1>Add ToDo</h1>
+      </div>
+    <div class="p-4">
+      <form action="add/" method="POST">
+          {% csrf_token%} {{form.as_p}}
+          <hr>
+          <input type="submit" value="ADD" class="btn btn-success">
+      </form>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="border">
+      {% if todos|length == 0 %}
+      <div class="p-4">
+        <br>
+        <br>
+        <div class="alert alert-danger text-center">
+          <p class="" style="font-size: 30px;">ToDo Lists</p>
+        </div>
+        <br>
+        <br>
+      </div>
+      {%else%}
+      <div class="p-2">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Title</th>
+              <th>Is_Done?</th>
+              <th>Status</th>
+              <th>Priority</th>
+              <th>Delete</th>
+              <th>Update</th>
+              
+              {% if user.is_superuser %}
+              <th>Todo Owner</th>
+              {% endif %}
+                
+            </tr>
+          </thead>
+          <tbody>
+            {% for todo in todos%}
+              <tr>
+                <td>{{forloop.counter}}</td>
+                <td>{{todo.title}}</td>
+                
+                {% if todo.is_done == True %}
+                  <td>
+                    <a href="{% url 'done' todo.id %}">✅</a>
+                  </td>
+                {% else %}
+                  <td>
+                    <a href="{% url 'done' todo.id %}">💤</a>
+                  </td>
+                {% endif %}
+
+                {% if todo.status == 'C'%}
+                  <td>
+                    ✅
+                  </td>
+                {% elif todo.status == 'I'%}
+                  <td>
+                    🚧
+                  </td>
+                {% elif todo.status == 'P'%}
+                  <td>
+                    💤
+                  </td>
+                {%endif%}
+                <td>
+                  {% if todo.priority == '1'%}
+                    1️⃣
+                  {%elif todo.priority == '2'%}
+                    2️⃣
+                  {%elif todo.priority == '3'%}
+                    3️⃣
+                  {%elif todo.priority == '4'%}
+                    4️⃣
+                  {%elif todo.priority == '5'%}
+                    5️⃣
+                  {%endif%}
+                </td>
+                <td>
+                  <a href="{% url 'delete' todo.id %}" target="_blank" title="Delete" class="text-decoration-none">🗑️</a> 
+                </td>
+                <td>
+                  <a href="{% url 'update' todo.id %}" target="_blank"  class="text-decoration-none">⚙️</a> 
+                </td>
+                {% if user.is_superuser %}
+                <td>
+                  {{ todo.user | capfirst }}
+                </td>
+                {% endif %}
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {%endif%}
+    </div>
+    
+    <div class="col-lg-10 mx-auto p-0 pt-1 mt-1 shadow text-end alert alert-info text-secondary fw-bolder fs-6 fst-italic">
+      <div class="p-1 m-2 pb-0">
+        <p>Priority'si 2'den büyük olan Todo'ların sayısı : <span class="alert alert-danger p-1">{{ priority_count }} / {{todos | length}}</span></p>
+      </div>
+      <div class="p-1 m-2 pb-0">
+        <p>Tamamlanan Todo'ların sayısı : <span class="alert alert-danger p-1">{{ done_count }} / {{todos | length}}</span></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% endblock content %}
