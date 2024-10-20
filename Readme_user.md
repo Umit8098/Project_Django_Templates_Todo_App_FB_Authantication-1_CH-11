@@ -1470,9 +1470,9 @@ git clone https://github.com/Umit8098/Project_Django_Rest_Framework_Rent_A_Car_A
 
 
 - Source code: -> bash terminalde app in olduğu klasör içerisinde iken, "pwd" yazıp klasörün yolunu görebiliyoruz.
-        /home/umit8104/Project_Django_Rest_Framework_Rent_A_Car_App_CH-12
+        /home/umit8105/Project_Django_Templates_Todo_App_FB_Authantication-1_CH-11
 - Working directory: -> Source code kısmına yazdığımız yolu buraya da yazıyoruz.
-        /home/umit8104/Project_Django_Rest_Framework_Rent_A_Car_App_CH-12
+        /home/umit8105/Project_Django_Templates_Todo_App_FB_Authantication-1_CH-11
 - WSGI configuration file: Manuel configuration yaptığımız için bu WSGY (Web Server Gateway Interface) configuration u da kendimiz yapacağız. django application ile server arasındaki iletişimi sağlayan gateway. Bunda ayarlar yapmalıyız. sağ tıklayıp new tab ile yeni pencerede açıyoruz, Default olarak farmeworklerin ayar template leri var. 74-89 satırları arasında django kısmı var. Bunun haricindeki herşeyi siliyoruz, sadece django ile ilgili kısım kalıyor. İlk iki satır hariç yorumdan kurtarıyoruz.
 
 ```py
