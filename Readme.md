@@ -31,32 +31,14 @@
 <!-- OVERVIEW -->
 
 ## Overview
-- Blog App
-![screenshot](project_screenshot/Blog_App.gif)
+- Todo App
+![screenshot](project_screenshot/Todo_App_Temp-1.gif)
 
 ---
-- User/Authentication 
-![screenshot](project_screenshot/register.png)
+- Todo App 
+![screenshot](project_screenshot/Todo_App_Temp-1.png)
 
 ---
-- User/Authentication 
-![screenshot](project_screenshot/login.png)
-
----
-- User/Authentication 
-![screenshot](project_screenshot/profile.png)
-
----
-- Blog App admin panel
-![screenshot](project_screenshot/admin_panel.png)
-
----
-- User/Authentication
-![screenshot](project_screenshot/change_password.png)
-
----
-- User/Authentication
-![screenshot](project_screenshot/reset_password.png)
 
 ## Built With
 
