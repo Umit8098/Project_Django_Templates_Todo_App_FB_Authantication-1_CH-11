@@ -32,11 +32,11 @@
 
 ## Overview
 - Todo App
-![screenshot](project_screenshot/Todo_App_Temp-1.gif)
+![screenshot](project_screenshot/Todo_App_Temp.gif)
 
 ---
 - Todo App 
-![screenshot](project_screenshot/Todo_App_Temp-2.gif)
+![screenshot](project_screenshot/Todo_App_Temp.gif)
 
 ---
 
