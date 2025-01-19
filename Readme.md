@@ -62,10 +62,11 @@
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- HTML
-- Bootstrap4
-- JS
 - Django Templates
+- JS
+- Bootstrap5
+- HTML
+- CSS
 
 ## How To Use
 
