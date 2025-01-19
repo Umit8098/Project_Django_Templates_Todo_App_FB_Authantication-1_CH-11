@@ -82,6 +82,12 @@ $ git clone https://github.com/Umit8098/Project_Django_Templates_Todo_App_FB_Aut
 # Create and Edit .env
 # Add Your SECRET_KEY in .env file
 
+"""
+# example .env;
+
+SECRET_KEY =123456789abcdefg...
+"""
+
 # Run the app
     $ python manage.py runserver
 ```
