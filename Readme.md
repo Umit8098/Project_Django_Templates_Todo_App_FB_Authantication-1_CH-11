@@ -36,7 +36,7 @@
 
 ---
 - Todo App 
-![screenshot](project_screenshot/Todo_App_Temp-1.png)
+![screenshot](project_screenshot/Todo_App_Temp-2.gif)
 
 ---
 
