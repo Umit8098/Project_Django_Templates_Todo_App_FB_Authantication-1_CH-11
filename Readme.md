@@ -100,8 +100,9 @@ SECRET_KEY =123456789abcdefg...
 - Todo Application
 
 ## Acknowledgements
-- [Bootstrap5](https://getbootstrap.com/) - Projede kullanılan CSS framework'ü.
-- [crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/) - Projede kullanılan formların CSS framework'ü.
+- [Bootstrap5](https://getbootstrap.com/) - CSS framework
+- [crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/) - form CSS framework
+- [dj-rest-auth](https://dj-rest-auth.readthedocs.io/en/latest/) - for authentication
 
 ## Contact
 
