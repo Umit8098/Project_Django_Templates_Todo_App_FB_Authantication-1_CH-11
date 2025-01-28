@@ -6,13 +6,8 @@
 <div align="center">
   <h3>
     <a href="https://umit8105.pythonanywhere.com/">
-      Demo
-    </a>
-     | 
-    <a href="https://umit8105.pythonanywhere.com/">
-      Project
-    </a>
- 
+      Live Demo
+    </a> 
   </h3>
 </div>
 
@@ -22,33 +17,46 @@
 
 - [Table of Contents](#table-of-contents)
 - [Overview](#overview)
+  - [Kullanıcı Login](#kullanıcı-login)
+  - [Todo App](#todo-app)
 - [Built With](#built-with)
 - [How To Use](#how-to-use)
+  - [Test Kullanıcı Bilgileri](#test-kullanıcı-bilgileri)
 - [About This Project](#about-this-project)
-- [Acknowledgements](#acknowledgements)
+- [Key Features](#key-features)
 - [Contact](#contact)
 
 <!-- OVERVIEW -->
 
 ## Overview
-- Todo App Authenticate
-![screenshot](project_screenshot/Todo_App_Temp-1.gif)
+
+### Kullanıcı Login
+<!-- ![screenshot](project_screenshot/Todo_App_Temp-1.gif) -->
+<img src="project_screenshot/Todo_App_Temp-1.gif" alt="Kullanıcı Login" width="400"/>
+➡ Kullanıcıların giriş yaparak Todo... sağlayabileceği ekran.
 
 ---
-- Todo App
-![screenshot](project_screenshot/Todo_App_Temp-2.gif)
+
+### Todo App
+<!-- ![screenshot](project_screenshot/Todo_App_Temp-2.gif) -->
+<img src="project_screenshot/Todo_App_Temp-2.gif" alt="Todo App" width="400"/>
+➡ Kullanıcıların Todo... ekran.
 
 ---
+
 
 ## Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
+Bu proje aşağıdaki araçlar ve kütüphaneler kullanılarak geliştirilmiştir:
 
-- Django Templates
-- JavaScript
-- Bootstrap5
-- HTML
-- CSS
+- [Django Templates](https://docs.djangoproject.com/en/5.1/topics/templates/): Dinamik web sayfaları oluşturmak için.
+- [Bootstrap5](https://getbootstrap.com/docs/5.0/getting-started/introduction/): Duyarlı ve modern bir kullanıcı arayüzü sağlamak için.
+- [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/): Formları kolayca stilize etmek için.
+- [dj-rest-auth](https://dj-rest-auth.readthedocs.io/en/latest/): Kullanıcı doğrulama ve yetkilendirme modülü.
+
+
+
 
 ## How To Use
 
@@ -92,6 +100,15 @@ SECRET_KEY =123456789abcdefg...
     $ python manage.py runserver
 ```
 
+### Test Kullanıcı Bilgileri
+
+Canlı demo için aşağıdaki test kullanıcı bilgilerini kullanabilirsiniz:
+- **Kullanıcı Adı**: testuser
+- **Şifre**: testpassword123
+- **e-mail**: testuser@gmail.com
+Bu kullanıcı sadece sipariş verme ve profil güncelleme işlemlerini gerçekleştirebilir.
+
+
 ## About This Project
 - Todo Application.
 
@@ -99,15 +116,19 @@ SECRET_KEY =123456789abcdefg...
 
 - Todo Application
 
-## Acknowledgements
-- [Bootstrap5](https://getbootstrap.com/) - CSS framework
-- [crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/) - form CSS framework
-- [dj-rest-auth](https://dj-rest-auth.readthedocs.io/en/latest/) - for authentication
+
+## Key Features
+
+- **Pizza Siparişi Yönetimi**: Kullanıcılar çeşitli boyut ve malzemelerle pizza siparişi verebilir.
+- **Kullanıcı Yönetimi**: Kayıt, giriş, profil düzenleme ve şifre değiştirme işlemleri.
+- **Sipariş Takibi**: Kullanıcılar verdikleri siparişleri görüntüleyebilir ve yönetebilir.
+- **Kullanıcı Bildirimleri**: Başarılı işlemler sonrası kullanıcıya ekran mesajı ile geri bildirim sağlanır.
+
 
 ## Contact
 
 <!-- - Website [your-website.com](https://{your-web-site-link}) -->
-- GitHub [@Umit8098](https://github.com/Umit8098)
+- **GitHub** [@Umit8098](https://github.com/Umit8098)
 
-- Linkedin [@umit-arat](https://linkedin.com/in/umit-arat/)
+- **LinkedIn** [@umit-arat](https://linkedin.com/in/umit-arat/)
 <!-- - Twitter [@your-twitter](https://{twitter.com/your-username}) -->
